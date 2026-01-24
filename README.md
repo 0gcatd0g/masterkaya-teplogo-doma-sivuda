@@ -21,4 +21,4 @@
 - shadcn-ui
 - Tailwind CSS
 
-Открыть: [Lovable][(https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) ](https://clck.ru/3RSMZH)
+Открыть: https://clck.ru/3RSMZH

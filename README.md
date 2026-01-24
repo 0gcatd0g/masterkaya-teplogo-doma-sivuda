@@ -2,7 +2,7 @@
 
 ## Информация о проекте
 
-**URL**:https://clck.ru/3RSMZH
+**URL**: https://clck.ru/3RSMmv
 
 ## Как я составил этот проект? 
 
@@ -21,4 +21,4 @@
 - shadcn-ui
 - Tailwind CSS
 
-Открыть: https://clck.ru/3RSMZH
+Открыть: https://clck.ru/3RSMmv

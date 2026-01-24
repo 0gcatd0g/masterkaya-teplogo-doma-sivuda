@@ -2,7 +2,7 @@
 
 ## Информация о проекте
 
-**URL**:[(https://clck.ru/3RSMZH]
+**URL**:(https://clck.ru/3RSMZH
 
 ## Как я составил этот проект? 
 

@@ -2,7 +2,7 @@
 
 ## Информация о проекте
 
-**URL**:[ https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID](https://clck.ru/3RSMZH)
+**URL**:[(https://clck.ru/3RSMZH]
 
 ## Как я составил этот проект? 
 

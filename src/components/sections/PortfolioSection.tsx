@@ -1,0 +1,114 @@
+import { ArrowRight, MapPin, Clock, Ruler } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+const projects = [
+  {
+    title: "Коттедж в Элисте",
+    description: "Утепление фасада по технологии «мокрый фасад» с отделкой декоративной штукатуркой",
+    area: "240 м²",
+    duration: "18 дней",
+    location: "г. Элиста",
+    tags: ["Мокрый фасад", "Штукатурка"],
+  },
+  {
+    title: "Частный дом в Кетченерах",
+    description: "Комплексное утепление кровли и фасадов с монтажом вентилируемого фасада",
+    area: "320 м²",
+    duration: "25 дней",
+    location: "п. Кетченеры",
+    tags: ["Вент. фасад", "Кровля"],
+  },
+  {
+    title: "Дом в Яшкуле",
+    description: "Утепление фасада термопанелями с клинкерной плиткой и монтаж тёплых полов",
+    area: "180 м²",
+    duration: "14 дней",
+    location: "п. Яшкуль",
+    tags: ["Термопанели", "Тёплый пол"],
+  },
+];
+
+const PortfolioSection = () => {
+  return (
+    <section id="portfolio" className="py-24 bg-muted/50 relative">
+      <div className="section-container">
+        {/* Header */}
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-12">
+          <div>
+            <span className="inline-block px-4 py-1 bg-secondary/10 text-secondary text-sm font-semibold rounded-full mb-4">
+              Портфолио
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
+              Наши проекты
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-xl">
+              Реализованные проекты в Республике Калмыкия
+            </p>
+          </div>
+          <Button variant="outline" size="lg">
+            Все проекты
+            <ArrowRight className="w-4 h-4" />
+          </Button>
+        </div>
+
+        {/* Projects Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className="group bg-card rounded-2xl overflow-hidden shadow-card border border-border card-hover"
+            >
+              {/* Image Placeholder */}
+              <div className="aspect-[4/3] bg-gradient-to-br from-primary/10 to-primary/5 relative overflow-hidden">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center">
+                    <MapPin className="w-8 h-8 text-secondary/50" />
+                  </div>
+                </div>
+                {/* Tags */}
+                <div className="absolute bottom-4 left-4 flex gap-2">
+                  {project.tags.map((tag, tIndex) => (
+                    <span
+                      key={tIndex}
+                      className="px-3 py-1 bg-card/90 backdrop-blur-sm text-xs font-medium text-foreground rounded-full"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Content */}
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-secondary transition-colors">
+                  {project.title}
+                </h3>
+                <p className="text-muted-foreground text-sm mb-4">
+                  {project.description}
+                </p>
+
+                {/* Meta Info */}
+                <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                  <div className="flex items-center gap-1">
+                    <Ruler className="w-4 h-4" />
+                    {project.area}
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <Clock className="w-4 h-4" />
+                    {project.duration}
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <MapPin className="w-4 h-4" />
+                    {project.location}
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default PortfolioSection;

@@ -9,6 +9,7 @@ const projects = [
     duration: "18 дней",
     location: "г. Ульяновск",
     tags: ["Мокрый фасад", "Штукатурка"],
+    image: "/images/project-1.jpg",
   },
   {
     title: "Частный дом в Димитровграде",
@@ -17,6 +18,7 @@ const projects = [
     duration: "25 дней",
     location: "г. Димитровград",
     tags: ["Вент. фасад", "Кровля"],
+    image: "/images/project-2.jpg",
   },
   {
     title: "Дом в Новоульяновске",
@@ -25,6 +27,7 @@ const projects = [
     duration: "14 дней",
     location: "г. Новоульяновск",
     tags: ["Термопанели", "Тёплый пол"],
+    image: "/images/project-3.jpg",
   },
 ];
 
@@ -58,13 +61,13 @@ const PortfolioSection = () => {
               key={index}
               className="group bg-card rounded-2xl overflow-hidden shadow-card border border-border card-hover"
             >
-              {/* Image Placeholder */}
+              {/* Project Image */}
               <div className="aspect-[4/3] bg-gradient-to-br from-primary/10 to-primary/5 relative overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center">
-                    <MapPin className="w-8 h-8 text-secondary/50" />
-                  </div>
-                </div>
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
                 {/* Tags */}
                 <div className="absolute bottom-4 left-4 flex gap-2">
                   {project.tags.map((tag, tIndex) => (

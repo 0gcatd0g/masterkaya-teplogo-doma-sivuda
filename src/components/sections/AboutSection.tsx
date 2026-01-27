@@ -2,7 +2,7 @@ import { Award, Home, Shield, Users, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const stats = [
-  { icon: Award, value: "15+", label: "Лет опыта" },
+  { icon: Award, value: "7+", label: "Лет опыта" },
   { icon: Home, value: "200+", label: "Проектов" },
   { icon: Shield, value: "10", label: "Лет гарантии" },
   { icon: Users, value: "15", label: "Специалистов" },
@@ -32,8 +32,8 @@ const AboutSection = () => {
             
             {/* Floating Stats Card */}
             <div className="absolute -bottom-6 -right-6 bg-card p-6 rounded-xl shadow-lg border border-border hidden md:block">
-              <div className="text-3xl font-bold text-secondary mb-1">40%</div>
-              <div className="text-sm text-muted-foreground">экономии на отоплении</div>
+              <div className="text-3xl font-bold text-secondary mb-1">-20%</div>
+              <div className="text-sm text-muted-foreground">экономия как субподрядчик</div>
             </div>
           </div>
 
@@ -43,13 +43,13 @@ const AboutSection = () => {
               О компании
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Создаём энергоэффективные дома с 2009 года
+              Создаём энергоэффективные дома с 2019 года
             </h2>
             <p className="text-muted-foreground text-lg mb-4">
-              «Мастерская Тёплого Дома» — это команда профессионалов с многолетним опытом в сфере утепления и отделки частных домов в Республике Калмыкия.
+              «Мастерская Тёплого Дома» — это команда профессионалов с многолетним опытом в сфере утепления и отделки частных домов в Ульяновской области.
             </p>
             <p className="text-muted-foreground mb-8">
-              Мы специализируемся на создании энергоэффективных решений, которые позволяют нашим клиентам экономить до 40% на отоплении зимой и сохранять прохладу летом. Работаем по договору с полной документацией и гарантией.
+              Мы работаем как надёжный субподрядчик для строительных компаний: вы экономите до 20% на рабочей силе без потери качества. Полная документация, договор и гарантия на все виды работ.
             </p>
 
             {/* Stats Grid */}

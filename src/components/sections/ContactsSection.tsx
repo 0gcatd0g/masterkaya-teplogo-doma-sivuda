@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const ContactsSection = () => {
   const [formData, setFormData] = useState({
@@ -71,13 +72,16 @@ const ContactsSection = () => {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Info */}
           <div>
-            <div className="mb-8">
-              <h3 className="text-xl font-bold text-primary-foreground mb-2">
-                ИП Сивуда Алексей Андреевич
-              </h3>
-              <p className="text-primary-foreground/60">
-                Официальный представитель «Мастерской Тёплого Дома»
-              </p>
+            <div className="flex items-center gap-4 mb-8">
+              <img src={logo} alt="Мастерская Тёплого Дома" className="w-16 h-16 rounded-xl object-cover" />
+              <div>
+                <h3 className="text-xl font-bold text-primary-foreground mb-1">
+                  ИП Сивуда Алексей Андреевич
+                </h3>
+                <p className="text-primary-foreground/60">
+                  Официальный представитель «Мастерской Тёплого Дома»
+                </p>
+              </div>
             </div>
 
             <div className="grid sm:grid-cols-2 gap-6">

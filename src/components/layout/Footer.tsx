@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -25,16 +26,14 @@ const Footer = () => {
           {/* Logo & Description */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center">
-                <span className="text-secondary-foreground font-bold text-lg">М</span>
-              </div>
+              <img src={logo} alt="Мастерская Тёплого Дома" className="w-10 h-10 rounded-lg object-cover" />
               <div>
                 <span className="font-bold text-lg block">Мастерская</span>
                 <span className="text-sm text-background/60">Тёплого Дома</span>
               </div>
             </div>
             <p className="text-background/60 text-sm mb-4">
-              Профессиональное утепление и отделка фасадов в Ульяновской области и других регионах. Работаем с 2009 года.
+              Профессиональное утепление и отделка фасадов в Ульяновской области и других регионах. Работаем с 2019 года.
             </p>
             <p className="text-background/80 text-sm font-medium">
               ИП Сивуда Алексей Андреевич

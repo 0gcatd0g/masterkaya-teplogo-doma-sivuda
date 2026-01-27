@@ -4,8 +4,8 @@ import { Play, X } from "lucide-react";
 const videos = [
   {
     id: 1,
-    title: "Строительно-монтажные работы",
-    description: "От работ нулевого цикла до отделочных",
+    title: "Трудовые будни наших сотрудников",
+    description: "В поисках строителей",
     src: "/videos/video-1.mp4",
   },
   {

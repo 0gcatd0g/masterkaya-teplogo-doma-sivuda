@@ -4,7 +4,7 @@ import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
   const stats = [
-    { icon: Award, value: "15+", label: "лет опыта" },
+    { icon: Award, value: "7+", label: "лет опыта" },
     { icon: Shield, value: "10", label: "лет гарантии" },
     { icon: Clock, value: "200+", label: "проектов" },
   ];
@@ -33,7 +33,7 @@ const HeroSection = () => {
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-card/10 backdrop-blur-sm border border-card/20 rounded-full mb-8 animate-fade-in">
             <span className="w-2 h-2 bg-secondary rounded-full animate-pulse" />
             <span className="text-sm text-card/90 font-medium">
-              Работаем по всей Калмыкии
+              Работаем по всей Ульяновской области
             </span>
           </div>
 

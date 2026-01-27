@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,9 +35,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center">
-              <span className="text-secondary-foreground font-bold text-lg">М</span>
-            </div>
+            <img src={logo} alt="Мастерская Тёплого Дома" className="w-10 h-10 rounded-lg object-cover" />
             <div className={`hidden sm:block ${isScrolled ? "text-foreground" : "text-card"}`}>
               <span className="font-bold text-lg">Мастерская</span>
               <span className="block text-sm opacity-80">Тёплого Дома</span>

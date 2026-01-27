@@ -34,7 +34,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-background/60 text-sm mb-4">
-              Профессиональное утепление и отделка фасадов в Республике Калмыкия. Работаем с 2009 года.
+              Профессиональное утепление и отделка фасадов в Ульяновской области и других регионах. Работаем с 2009 года.
             </p>
             <p className="text-background/80 text-sm font-medium">
               ИП Сивуда Алексей Андреевич
@@ -82,7 +82,7 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-secondary mt-0.5 flex-shrink-0" />
                 <span className="text-background/60 text-sm">
-                  Республика Калмыкия, Кетченеровский район, поселок Кетченеры
+                  Ульяновская область, г. Ульяновск
                 </span>
               </li>
               <li>

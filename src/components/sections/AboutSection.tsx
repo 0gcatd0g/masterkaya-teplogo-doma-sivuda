@@ -1,4 +1,5 @@
 import { Award, Home, Shield, Users, ArrowRight } from "lucide-react";
+import logo from "@/assets/logo.png";
 import { Button } from "@/components/ui/button";
 
 const stats = [
@@ -21,9 +22,7 @@ const AboutSection = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-lg">
               <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
                 <div className="text-center p-8">
-                  <div className="w-24 h-24 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Home className="w-12 h-12 text-secondary" />
-                  </div>
+                  <img src={logo} alt="Мастерская Тёплого Дома" className="w-32 h-32 mx-auto mb-4 object-contain" />
                   <h3 className="text-xl font-bold text-foreground mb-2">Мастерская Тёплого Дома</h3>
                   <p className="text-muted-foreground">Профессионалы своего дела</p>
                 </div>
